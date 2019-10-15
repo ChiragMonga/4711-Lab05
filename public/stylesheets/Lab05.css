@@ -1,0 +1,113 @@
+.topdiv{
+    display: block;
+    margin: auto;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    width: 45vw;
+    padding-bottom: 2%;
+}
+
+.topdiv h2{
+    font-family: Arial;
+    padding-left: 5%;
+}
+
+.topdiv input{
+    float: left;
+    margin-left: 5%;
+    width: 65%;
+    padding: 1%;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+ul{
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    margin: 0 auto;
+    width: 35vw;
+    padding: 0%;
+}
+li{
+    position: relative;
+    margin-top: 0;
+    display: inline-block; 
+    width: 90%;
+    list-style: none;
+    padding: 5%;
+    border-bottom: 1px solid lightgrey;
+}
+li:hover{
+    background-color: lightgrey;
+}
+img{
+    float: left;
+    margin-right: 1%;
+    border-radius: 5px;
+}
+
+@font-face {
+    font-family: redhat;
+    src: url(red-hat.display.ttf);
+}
+.artists{
+    position: absolute;
+    left: 18%;
+    width:40%;
+    font-family: redhat;
+    padding-left: 5%;
+}
+.artists p{
+    margin-top: 0%;
+}
+.heading{
+    font-size: 14pt;
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+
+.add{
+    background-color: lightgray;
+    margin-left: 1%;
+    border: none;
+    padding: 1%;
+    width: 10%;
+    font-family: redhat;
+    font-weight: bold; 
+}
+
+#form{
+    display: none;
+    width: 25vw;
+    margin: 0 auto;
+}
+
+#form input {
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    text-align: center;
+    padding: 1%;
+}
+
+#form #button{
+    padding: 2%;
+    width: 35%;
+    display: block;
+    margin: 0 auto;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 4%;
+    border-radius: 5px;
+    position: absolute;
+    left: 75%;
+    top: 25%; 
+    width: 20%;
+    
+}

@@ -1,0 +1,30 @@
+
+    <div class="topdiv">
+        <h2>Artist Directory</h1>
+        <input id="searchBar" type="text">
+        <button class="add"id="addArtist" onclick="openForm()">Add</button>
+        <button class="add"id="search" onclick="search()">Search</button>
+    </div>
+    <div id="form">
+        <form action="/postAction" id="artistForm" method="POST">
+            <input type="text" placeholder="Artist Name" name="name" maxlength="40">
+            <input type="text" placeholder="About Artist" name="desc" maxlength="40">
+            <input type="text" placeholder="Image url" name="url" >
+            <input type="submit" class="add" id="button" value="Add">
+        </form>
+    </div> 
+    <ul id="list">
+        {{#each user}}
+            <li>
+            <img src="{{this.url}}"/>
+            <div>
+                <h2  class="heading">{{this.name}}</h2>
+                <p>{{this.desc}}</p>
+                <form action="/delete" method="POST" >
+                    <input hidden="hidden" name="name" value="{{this.name}}">
+                    <input type="submit" value="delete" class="delete">
+                </form>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
